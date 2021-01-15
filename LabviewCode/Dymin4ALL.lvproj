@@ -2753,8 +2753,8 @@ AddOutputFilter chunkFilter
 						<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
 						<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
 						<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
-						<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/STED2-PC/Documents/GitHub/Dymin/LabviewCode/FPGA Bitfiles/Dymin4ALL_FPGATarget_DyminFPGAMain_tvePJN2uf4s.lvbitx</Property>
-						<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/Dymin4ALL_FPGATarget_DyminFPGAMain_tvePJN2uf4s.lvbitx</Property>
+						<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/STED2-PC/Documents/GitHub/DyminSTED4all/LabviewCode/FPGA Bitfiles/Dymin4ALL_FPGATarget_DyminFPGAMain_ZHf+dsZ+5lE.lvbitx</Property>
+						<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/Dymin4ALL_FPGATarget_DyminFPGAMain_ZHf+dsZ+5lE.lvbitx</Property>
 						<Property Name="ProjectPath" Type="Path">/C/Users/STED2-PC/Documents/GitHub/Dymin/LabviewCode/Dymin4ALL.lvproj</Property>
 						<Property Name="RelativePath" Type="Bool">true</Property>
 						<Property Name="RunWhenLoaded" Type="Bool">false</Property>
@@ -2810,7 +2810,6 @@ AddOutputFilter chunkFilter
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Dymin4ALL_FPGATarget_DyminFPGAMain_tvePJN2uf4s.lvbitx" Type="Document" URL="../FPGA Bitfiles/Dymin4ALL_FPGATarget_DyminFPGAMain_tvePJN2uf4s.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
