@@ -1,8 +1,8 @@
 # DyMINSTED4all
-Open source instructions and code for making your STED microscope a DyMIN STED
+Open source instructions and code for making your STED microscope a Dymin STED
 
 ## Description
-Using inexpensive parts and Labview code, we implemented DyMIN STED Microscopy as detailed from in the paper: [Adaptive Illumination STED Nanoscopy](https://www.pnas.org/content/114/37/9797).  Please spend some time reading through the excellent explanation and description of DyMIN in this paper, because you will need a firm understanding of the DyMIN method in order to follow these instructions.  The Github files include our code, parts list and instructions.
+Using inexpensive parts and labview code, we implemented DyMIN STED Microscopy as detailed from in the paper: [Adaptive Illumination STED Nanoscopy](https://www.pnas.org/content/114/37/9797).  The following files include our code, parts list and instructions to set up.
 
 ## Parts list
 National Instruments myRIO-1900
