@@ -21,3 +21,5 @@
 LabviewCode/Dymin4ALL - Copy.lvproj
 LabviewCode/Old Files/Dymin_FPGA_Main_EXCTrig.vi
 LabviewCode/Synchronization Registers Testing.vi
+*.pptx
+.DS_Store
