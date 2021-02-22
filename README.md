@@ -37,7 +37,7 @@ See DyMINSTED4ALL Schematic file in Documents folder for experimental schematic.
 ## AOM RF Driver Analog Voltage Control and Eval Board for Multiplexer
 We implemented DyMIN with an AOM and RF driver purchased off of Ebay that is no longer commercially available.  The electrical properties of the analog voltage control of the RF driver (ie. the input impedance and voltage range required to obtain STED powers you want at the sample) are the relevant parameters that will determine how your AOM and RF driver will work with the multiplexer circuit.  With a 50 Ohm input coupling impedance and 0-1V analog modulation values for our RF driver, we were able to get the right range of currents out of the circuit by modifying a few of the resisters on the evaluation board.  Resistors R14 and R21 were replaced with 2k Ohm resistors and resistors R16 and R22 were removed to isolate the 75 Ohm side of the board. See the file in Documents called "Anal. Dev. ADV3221-EVALZ Schematic.pdf" (downloaded from Analog Devices, Inc.) for the evaluation board schematic.  If your RF driver has different analog control properties, you will need to modify these resistors so that the multiplexer circuit can provide the current at the voltage ranges required for your RF driver.
 
-## ADV3221 Multiplexer Information and Truth Table
+# ADV3221 Multiplexer Information and Truth Table
 The multiplexer allows the FPGA's fast DIO lines to be used to quickly select between various Analog output values to be passed on based on a truth table provided by the manufacturer.
 
 # Multiplexer Inputs and Outputs
@@ -54,8 +54,8 @@ IN1
 IN2  
 IN3  
 
-Analog output (one of IN0,IN1,IN2,IN3 is passed to the OUT based on the truth table):
-OUT=RF Driver analog voltage control input signal
+Analog output (one of IN0,IN1,IN2,IN3 is passed to the OUT based on the truth table):  
+OUT=RF Driver analog voltage control input signal  
 
 # Multiplexer Truth Table  
 Multiplexer digital input names and truth table:  
