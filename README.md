@@ -1,16 +1,12 @@
-@@ -1,27 +1,119 @@
-# DyminSTED4all
-Open source instructions and code for making your STED microscope a Dymin STED
-Open-source instructions and code for making your STED microscope a Dymin STED
+# DyMINSTED4all
+Open source instructions and code for making your STED microscope a DyMIN STED
 
 ## Description
-
-Using inexpensive parts and labview code, we implemented Dymin STED Microscopy as detailed from in the paper: [Adaptive Illumination STED Nanoscopy](https://www.pnas.org/content/114/37/9797).  The following files include our code, parts list and instructions to set up.
-Using inexpensive parts and Labview code, we implemented Dymin STED Microscopy as detailed from in the paper: [Adaptive Illumination STED Nanoscopy](https://www.pnas.org/content/114/37/9797).  Please spend some time reading through the excellent explanation and description of DyMIN in this paper, because you will need a firm understanding of the DyMIN method in order to follow these instructions.  The Github files include our code, parts list and instructions.
+Using inexpensive parts and Labview code, we implemented DyMIN STED Microscopy as detailed from in the paper: [Adaptive Illumination STED Nanoscopy](https://www.pnas.org/content/114/37/9797).  Please spend some time reading through the excellent explanation and description of DyMIN in this paper, because you will need a firm understanding of the DyMIN method in order to follow these instructions.  The Github files include our code, parts list and instructions.
 
 ## Parts list
 National Instruments myRIO-1900
--STED microscope: must use an image acquisition program that can provide a pixel clock to send to the Dymin FPGA circuit, must also use an APD (up to two APDs can be included) with digital pulses for fluorescence detection
+-STED microscope: must use an image acquisition program that can provide a pixel clock to send to the DyMIN FPGA circuit, must also use an APD (up to two APDs can be included) with digital pulses for fluorescence detection
 -AOM and RF driver for AOM, AOM must be aligned to control the power to the STED microscope using an analog input to the RF driver.
 -National Instruments Inc, myRIO-1900 and power supply
 -Digilent Inc, Wire Wrap or Protoboard Expansion for NI myRio
@@ -23,20 +19,20 @@ National Instruments myRIO-1900
 
 ## Experimental diagram
 
-## Dymin_FPGA_Main.vi
+## DyMIN_FPGA_Main.vi
 The file includes the labview code for the FPGA.
 
 Requirements:
-## Computer Requirements:
-Labview 2016 (32 bit)
-Labview Real-Time Module
-Labview FPGA Module
-Compile Cloud access (Sign up at https://www.ni.com/en-us/support/documentation/supplemental/14/compile-faster-with-the-labview-fpga-compile-cloud-service.html)
-OR Xilinx Compilation Tools to compile the code on your FPGA.
+## Computer Requirements:  
+Labview 2016 (32 bit)  
+Labview Real-Time Module  
+Labview FPGA Module  
+Compile Cloud access (Sign up at https://www.ni.com/en-us/support/documentation/supplemental/14/compile-faster-with-the-labview-fpga-compile-cloud-service.html)  
+OR Xilinx Compilation Tools to compile the code on your FPGA.  
 
-Run this file before you run the Dymin_RT_Main.vi file to generate the bitfile for your FPGA.  Warning, every time you compile the code after changes it will take several minutes to compile.
+Run this file before you run the DyMIN_RT_Main.vi file to generate the bitfile for your FPGA.  Warning, every time you compile the code after changes it will take several minutes to compile.  
 ## Experimental diagram
-See DyminSTED4ALL Schematic file in Documents folder for experimental schematic.
+See DyMINSTED4ALL Schematic file in Documents folder for experimental schematic.
 
 ## AOM RF Driver Analog Voltage Control and Eval Board for Multiplexer
 We implemented DyMIN with an AOM and RF driver purchased off of Ebay that is no longer commercially available.  The electrical properties of the analog voltage control of the RF driver (ie. the input impedance and voltage range required to obtain STED powers you want at the sample) are the relevant parameters that will determine how your AOM and RF driver will work with the multiplexer circuit.  With a 50 Ohm input coupling impedance and 0-1V analog modulation values for our RF driver, we were able to get the right range of currents out of the circuit by modifying a few of the resisters on the evaluation board.  Resistors R14 and R21 were replaced with 2k Ohm resistors and resistors R16 and R22 were removed to isolate the 75 Ohm side of the board. See the file in Documents called "Anal. Dev. ADV3221-EVALZ Schematic.pdf" (downloaded from Analog Devices, Inc.) for the evaluation board schematic.  If your RF driver has different analog control properties, you will need to modify these resistors so that the multiplexer circuit can provide the current at the voltage ranges required for your RF driver.
@@ -44,63 +40,63 @@ We implemented DyMIN with an AOM and RF driver purchased off of Ebay that is no 
 ## ADV3221 Multiplexer Information and Truth Table
 The multiplexer allows the FPGA's fast DIO lines to be used to quickly select between various Analog output values to be passed on based on a truth table provided by the manufacturer.
 
-#Multiplexer Inputs and Outputs
-Digital inputs that control the output:
-A0
-A1
-CK1
-CK2
-CS
+# Multiplexer Inputs and Outputs
+Digital inputs that control the output:  
+A0  
+A1  
+CK1  
+CK2  
+CS  
 
 Analog inputs (+/- 3V) that are passed based on the truth table:
-IN0
-IN1
-IN2
-IN3
+IN0  
+IN1  
+IN2  
+IN3  
 
 Analog output (one of IN0,IN1,IN2,IN3 is passed to the OUT based on the truth table):
 OUT=RF Driver analog voltage control input signal
 
-#Multiplexer Truth Table
-Multiplexer digital input names and truth table:
-0=FALSE, 1=TRUE
+# Multiplexer Truth Table  
+Multiplexer digital input names and truth table:  
+0=FALSE, 1=TRUE  
 
-CS A1 A0 CK1 CK2 -> Multiplexer IN# passed
+CS A1 A0 CK1 CK2 -> Multiplexer IN# passed  
 ---------------------------
-00000 -> IN0
-00100 -> IN1
-01000 -> IN2
-01100 -> IN3
-1XX00 ->High-Z X means anything
+00000 -> IN0  
+00100 -> IN1  
+01000 -> IN2  
+01100 -> IN3  
+1XX00 ->High-Z X means anything  
 
 
-#myRio-1900 FPGA Information
+#  myRio-1900 FPGA Information
 Install the myRIO-1900 and the required Labview components on your computer by following the manufacturer's instructions and use the testing features (click on "Configure NI myRIO") when you connect your myRIO-1900 to the computer to test that it is working properly.
 
-Digital inputs from STED microscope to myRIO:
-C/DIO0=PIX CLK
-C/DIO1=APD1 IN
-C/DIO2=APD2 IN
+Digital inputs from STED microscope to myRIO:  
+C/DIO0=PIX CLK  
+C/DIO1=APD1 IN  
+C/DIO2=APD2 IN  
 (If you only have one APD just use APD1 and ignore APD2.  If you have both, the program adds them up and keeps performs DyMIN on the sum of the two APD signals.)
 
-Digital outputs:
-C/DIO5=APD1 OUT
-C/DIO6=APD2 OUT
-C/DIO7=10 MHz OUT (used to sync our STED CLK with the single cycle timed loops (SCTL) of the FPGA)
+Digital outputs:  
+C/DIO5=APD1 OUT  
+C/DIO6=APD2 OUT  
+C/DIO7=10 MHz OUT (used to sync our STED CLK with the single cycle timed loops (SCTL) of the FPGA)  
 
-Digital outputs to multiplexer from myRio:
-A/DIO7=A0
-A/DIO8=A1
-A/DIO9=CK1=CK2
-A/DIO10=CS
+Digital outputs to multiplexer from myRio:  
+A/DIO7=A0  
+A/DIO8=A1  
+A/DIO9=CK1=CK2  
+A/DIO10=CS  
 
-Analog outputs to multiplexer from myRIO:
-A/AO0=IN0
-C/AO0=IN1
-C/AO1=IN2
-A/AO1=IN3
+Analog outputs to multiplexer from myRIO:  
+A/AO0=IN0  
+C/AO0=IN1  
+C/AO1=IN2  
+A/AO1=IN3  
 
-##Instructions for Circuit Building and Testing:
+##  Instructions for Circuit Building and Testing:
 First align your STED laser through your AOM and make sure you get good diffraction into the first order.  Then couple the 1st order diffraction beam into the fiber that couples your STED laser to your STED microscope.
 
 Attach the ADV3221 to the Evaluation board.  Once you have attached the ADV3221 to the board, then wire up the digital and analog connections from the FPGA to the ADV3221 (see above).  Connect the output to an oscilloscope, terminating it with your RF driver's Analog voltage control input coupling impedance so you can check the voltage range output by the multiplexer is what you need for your application by monitoring the output on the scope as you change the input analog voltages and selected output with a testing program.
@@ -115,14 +111,14 @@ Then, to characterize the time to change the STED laser power, detect the STED l
 
 Now that you know the multiplexer circuit is working to change your STED power quickly you can move on to implementing DyMIN.  Purchase BNC connectors, SMA and BNC cables, elbows, etc so you can put the FPGA and Eval board inside of a metal enclosure.  We used a Protocase 2U Extruded Aluminum Type C Template with custom holes for the various BNC inputs and outputs. Mount connectors on the box and install your FPGA and Multiplexer circuit in the box.
 
-## Dymin_FPGA_Main.vi
+# DyMIN_FPGA_Main.vi
 This file includes the Labview code for the FPGA.
 
-Run this file before you run the Dymin_RT_Main.vi file to generate the bitfile for your FPGA.  Warning, every time you compile FPGA code after changes it will take several minutes to compile.
+Run this file before you run the DyMIN_RT_Main.vi file to generate the bitfile for your FPGA.  Warning, every time you compile FPGA code after changes it will take several minutes to compile.
 
 
-## Dymin_RT_Main.vi
-Check the connection to Dymin_FPGA_Main.vi (look for bookmark #Dymin_FPGA_Main in bookmark manager) and the myRIO are correct and then run this file to run the FPGA code from the computer.  Every time you change the underlying Dymin_FPGA_Main.vi file you will need to recompile it by running it directly from the FPGA vi, then you can run it from this RT (RT=Real-Time) file again.
+# DyMIN_RT_Main.vi
+Check the connection to DyMIN_FPGA_Main.vi (look for bookmark #DyMIN_FPGA_Main in bookmark manager) and the myRIO are correct and then run this file to run the FPGA code from the computer.  Every time you change the underlying DyMIN_FPGA_Main.vi file you will need to recompile it by running it directly from the FPGA vi, then you can run it from this RT (RT=Real-Time) file again.
 
 Once your code is compiled and ready to test, the first step of testing is to test it with known inputs, using function generators to provide an APD signal and pixel clock that are electrically equivalent to what you will be using with your STED microscope.  Send the OUT from the multiplexer, with appropriate output coupling resistor, to your oscilloscope and send the APD1 and/or APD2 output to the other channel of your oscilloscope.  As you modify the analog voltages, Threshold values and times for each DyMIN step you should verify that the outputs act as expected.
 
