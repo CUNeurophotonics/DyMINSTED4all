@@ -23,3 +23,7 @@ LabviewCode/Old Files/Dymin_FPGA_Main_EXCTrig.vi
 LabviewCode/Synchronization Registers Testing.vi
 *.pptx
 .DS_Store
+LabviewCode/FPGA Main.vi
+LabviewCode/RT Main.vi
+LabviewCode/Control 1.ctl
+LabviewCode/Control 2.ctl
