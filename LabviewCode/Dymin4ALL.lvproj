@@ -12,6 +12,8 @@
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="mathScriptPath" Type="Str">C:\Users\STED2-PC\Documents\LabVIEW Data;C:\Users\STED2-PC\Documents\GitHub\DyminSTED4all\MatlabCode</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -24,7 +26,10 @@
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="Documentation Images" Type="Folder"/>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Fit_AOM_calibration.vi" Type="VI" URL="../Fit_AOM_calibration.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="predicted.m" Type="Document" URL="../../MatlabCode/predicted.m"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-031e8e64" Type="RT myRIO">
@@ -38,6 +43,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">8</Property>
 		<Property Name="host.TargetOSID" Type="UInt">8</Property>
+		<Property Name="mathScriptPath" Type="Str">C:\Users\STED2-PC\Documents\LabVIEW Data;C:\Users\STED2-PC\Documents\GitHub\DyminSTED4all\MatlabCode</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
@@ -107,6 +113,153 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="PM100D" Type="Folder">
+			<Item Name="PM100D" Type="Folder">
+				<Item Name="PM100D Calibration Message.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Calibration Message.vi"/>
+				<Item Name="PM100D Cancel Dark Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Cancel Dark Adjustment.vi"/>
+				<Item Name="PM100D Close.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Close.vi"/>
+				<Item Name="PM100D Error Message.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Error Message.vi"/>
+				<Item Name="PM100D Error Query Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Error Query Mode.vi"/>
+				<Item Name="PM100D Error-Query.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Error-Query.vi"/>
+				<Item Name="PM100D Find Resources.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Find Resources.vi"/>
+				<Item Name="PM100D Get Attenuation.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Attenuation.vi"/>
+				<Item Name="PM100D Get Average Count.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Average Count.vi"/>
+				<Item Name="PM100D Get Average Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Average Time.vi"/>
+				<Item Name="PM100D Get Battery Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Battery Voltage.vi"/>
+				<Item Name="PM100D Get Beam Diameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Beam Diameter.vi"/>
+				<Item Name="PM100D Get Communication Timeout.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Communication Timeout.vi"/>
+				<Item Name="PM100D Get Current Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Autorange Mode.vi"/>
+				<Item Name="PM100D Get Current Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Range.vi"/>
+				<Item Name="PM100D Get Current Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Reference State.vi"/>
+				<Item Name="PM100D Get Current Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Reference.vi"/>
+				<Item Name="PM100D Get Custom Sensor Input Adapter Type.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Custom Sensor Input Adapter Type.vi"/>
+				<Item Name="PM100D Get Dark Adjustment State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Dark Adjustment State.vi"/>
+				<Item Name="PM100D Get Dark Offset.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Dark Offset.vi"/>
+				<Item Name="PM100D Get Date And Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Date And Time.vi"/>
+				<Item Name="PM100D Get Digital I  O Direction.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Digital I  O Direction.vi"/>
+				<Item Name="PM100D Get Digital I  O Output.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Digital I  O Output.vi"/>
+				<Item Name="PM100D Get Digital I  O Port.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Digital I  O Port.vi"/>
+				<Item Name="PM100D Get Display Brightness.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Display Brightness.vi"/>
+				<Item Name="PM100D Get Display Contrast.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Display Contrast.vi"/>
+				<Item Name="PM100D Get Energy Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Energy Range.vi"/>
+				<Item Name="PM100D Get Energy Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Energy Reference State.vi"/>
+				<Item Name="PM100D Get Energy Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Energy Reference.vi"/>
+				<Item Name="PM100D Get External NTC Parameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get External NTC Parameter.vi"/>
+				<Item Name="PM100D Get Frequency Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Frequency Range.vi"/>
+				<Item Name="PM100D Get Line Frequency.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Line Frequency.vi"/>
+				<Item Name="PM100D Get Peak Detector Threshold.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Peak Detector Threshold.vi"/>
+				<Item Name="PM100D Get Photodiode Input Filter State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Photodiode Input Filter State.vi"/>
+				<Item Name="PM100D Get Photodiode Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Photodiode Responsivity.vi"/>
+				<Item Name="PM100D Get Power Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Autorange Mode.vi"/>
+				<Item Name="PM100D Get Power Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Range.vi"/>
+				<Item Name="PM100D Get Power Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Reference State.vi"/>
+				<Item Name="PM100D Get Power Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Reference.vi"/>
+				<Item Name="PM100D Get Power Unit.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Unit.vi"/>
+				<Item Name="PM100D Get Pyrosensor Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Pyrosensor Responsivity.vi"/>
+				<Item Name="PM100D Get Resource Information.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Resource Information.vi"/>
+				<Item Name="PM100D Get Resource Name.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Resource Name.vi"/>
+				<Item Name="PM100D Get Thermopile Accelerator Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Accelerator Mode.vi"/>
+				<Item Name="PM100D Get Thermopile Accelerator State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Accelerator State.vi"/>
+				<Item Name="PM100D Get Thermopile Accelerator Tau.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Accelerator Tau.vi"/>
+				<Item Name="PM100D Get Thermopile Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Responsivity.vi"/>
+				<Item Name="PM100D Get Voltage Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Autorange Mode.vi"/>
+				<Item Name="PM100D Get Voltage Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Range.vi"/>
+				<Item Name="PM100D Get Voltage Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Reference State.vi"/>
+				<Item Name="PM100D Get Voltage Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Reference.vi"/>
+				<Item Name="PM100D Get Wavelength.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Wavelength.vi"/>
+				<Item Name="PM100D Identification Query.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Identification Query.vi"/>
+				<Item Name="PM100D Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Initialize.vi"/>
+				<Item Name="PM100D Measure Auxiliary AD0 Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Auxiliary AD0 Voltage.vi"/>
+				<Item Name="PM100D Measure Auxiliary AD1 Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Auxiliary AD1 Voltage.vi"/>
+				<Item Name="PM100D Measure Current.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Current.vi"/>
+				<Item Name="PM100D Measure Energy Density.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Energy Density.vi"/>
+				<Item Name="PM100D Measure Energy.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Energy.vi"/>
+				<Item Name="PM100D Measure Environmental Humidity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Environmental Humidity.vi"/>
+				<Item Name="PM100D Measure Environmental Temperature.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Environmental Temperature.vi"/>
+				<Item Name="PM100D Measure External NTC Resistance.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure External NTC Resistance.vi"/>
+				<Item Name="PM100D Measure External NTC Temperature.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure External NTC Temperature.vi"/>
+				<Item Name="PM100D Measure Frequency.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Frequency.vi"/>
+				<Item Name="PM100D Measure Power Density.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Power Density.vi"/>
+				<Item Name="PM100D Measure Power.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Power.vi"/>
+				<Item Name="PM100D Measure Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Voltage.vi"/>
+				<Item Name="PM100D Preset Registers.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Preset Registers.vi"/>
+				<Item Name="PM100D Raw Read From Instrument.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Raw Read From Instrument.vi"/>
+				<Item Name="PM100D Raw Write To Instrument.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Raw Write To Instrument.vi"/>
+				<Item Name="PM100D Read Register.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Read Register.vi"/>
+				<Item Name="PM100D Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Reset.vi"/>
+				<Item Name="PM100D Revision Query.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Revision Query.vi"/>
+				<Item Name="PM100D Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Self-Test.vi"/>
+				<Item Name="PM100D Sensor Information.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Sensor Information.vi"/>
+				<Item Name="PM100D Set Attenuation.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Attenuation.vi"/>
+				<Item Name="PM100D Set Average Count.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Average Count.vi"/>
+				<Item Name="PM100D Set Average Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Average Time.vi"/>
+				<Item Name="PM100D Set Beam Diameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Beam Diameter.vi"/>
+				<Item Name="PM100D Set Communication Timeout.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Communication Timeout.vi"/>
+				<Item Name="PM100D Set Current Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Autorange Mode.vi"/>
+				<Item Name="PM100D Set Current Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Range.vi"/>
+				<Item Name="PM100D Set Current Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Reference State.vi"/>
+				<Item Name="PM100D Set Current Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Reference.vi"/>
+				<Item Name="PM100D Set Custom Sensor Input Adapter Type.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Custom Sensor Input Adapter Type.vi"/>
+				<Item Name="PM100D Set Date And Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Date And Time.vi"/>
+				<Item Name="PM100D Set Digital I  O Direction.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Digital I  O Direction.vi"/>
+				<Item Name="PM100D Set Digital I  O Output.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Digital I  O Output.vi"/>
+				<Item Name="PM100D Set Display Brightness.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Display Brightness.vi"/>
+				<Item Name="PM100D Set Display Contrast.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Display Contrast.vi"/>
+				<Item Name="PM100D Set Energy Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Energy Range.vi"/>
+				<Item Name="PM100D Set Energy Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Energy Reference State.vi"/>
+				<Item Name="PM100D Set Energy Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Energy Reference.vi"/>
+				<Item Name="PM100D Set External NTC Parameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set External NTC Parameter.vi"/>
+				<Item Name="PM100D Set Line Frequency.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Line Frequency.vi"/>
+				<Item Name="PM100D Set Peak Detector Threshold.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Peak Detector Threshold.vi"/>
+				<Item Name="PM100D Set Photodiode Input Filter State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Photodiode Input Filter State.vi"/>
+				<Item Name="PM100D Set Photodiode Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Photodiode Responsivity.vi"/>
+				<Item Name="PM100D Set Power Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Autorange Mode.vi"/>
+				<Item Name="PM100D Set Power Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Range.vi"/>
+				<Item Name="PM100D Set Power Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Reference State.vi"/>
+				<Item Name="PM100D Set Power Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Reference.vi"/>
+				<Item Name="PM100D Set Power Unit.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Unit.vi"/>
+				<Item Name="PM100D Set Pyrosensor Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Pyrosensor Responsivity.vi"/>
+				<Item Name="PM100D Set Thermopile Accelerator Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Accelerator Mode.vi"/>
+				<Item Name="PM100D Set Thermopile Accelerator State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Accelerator State.vi"/>
+				<Item Name="PM100D Set Thermopile Accelerator Tau.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Accelerator Tau.vi"/>
+				<Item Name="PM100D Set Thermopile Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Responsivity.vi"/>
+				<Item Name="PM100D Set Voltage Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Autorange Mode.vi"/>
+				<Item Name="PM100D Set Voltage Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Range.vi"/>
+				<Item Name="PM100D Set Voltage Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Reference State.vi"/>
+				<Item Name="PM100D Set Voltage Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Reference.vi"/>
+				<Item Name="PM100D Set Wavelength.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Wavelength.vi"/>
+				<Item Name="PM100D Start Dark Offset Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Start Dark Offset Adjustment.vi"/>
+				<Item Name="PM100D VI Tree.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D VI Tree.vi"/>
+				<Item Name="PM100D VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D VXIpnp Error Converter.vi"/>
+				<Item Name="PM100D Write Register.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Write Register.vi"/>
+			</Item>
+			<Item Name="dir - Digital I_O.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Digital I_O.mnu"/>
+			<Item Name="dir - Measure - Configure - Average.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Average.mnu"/>
+			<Item Name="dir - Measure - Configure - Correction.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Correction.mnu"/>
+			<Item Name="dir - Measure - Configure - Current Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Current Measurement.mnu"/>
+			<Item Name="dir - Measure - Configure - Energy Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Energy Measurement.mnu"/>
+			<Item Name="dir - Measure - Configure - External Temperature Sensor.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - External Temperature Sensor.mnu"/>
+			<Item Name="dir - Measure - Configure - Frequency Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Frequency Measurement.mnu"/>
+			<Item Name="dir - Measure - Configure - Input.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Input.mnu"/>
+			<Item Name="dir - Measure - Configure - Peak Detector.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Peak Detector.mnu"/>
+			<Item Name="dir - Measure - Configure - Power Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Power Measurement.mnu"/>
+			<Item Name="dir - Measure - Configure - Voltage Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Voltage Measurement.mnu"/>
+			<Item Name="dir - Measure - Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure.mnu"/>
+			<Item Name="dir - Measure - Read.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Read.mnu"/>
+			<Item Name="dir - Measure.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure.mnu"/>
+			<Item Name="dir - Resource Functions.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Resource Functions.mnu"/>
+			<Item Name="dir - Status Register.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Status Register.mnu"/>
+			<Item Name="dir - System - Battery.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Battery.mnu"/>
+			<Item Name="dir - System - Date Time.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Date Time.mnu"/>
+			<Item Name="dir - System - Display.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Display.mnu"/>
+			<Item Name="dir - System - Line Frequency.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Line Frequency.mnu"/>
+			<Item Name="dir - System.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System.mnu"/>
+			<Item Name="dir - Utility Functions - Raw I_O.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Utility Functions - Raw I_O.mnu"/>
+			<Item Name="dir - Utility Functions - Timeout.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Utility Functions - Timeout.mnu"/>
+			<Item Name="dir - Utility Functions.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Utility Functions.mnu"/>
+			<Item Name="dir.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir.mnu"/>
+			<Item Name="Report.html" Type="Document" URL="/&lt;instrlib&gt;/PM100D/Report.html"/>
+		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -117,7 +270,7 @@ AddOutputFilter chunkFilter
 				<Property Name="configString.name" Type="Str">10 MHzMultiplier=1.000000;Divisor=4.000000160MHzMultiplier=4.000000;Divisor=1.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E80MHzMultiplier=2.000000;Divisor=1.000000A.AI0 DMA"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;A.AI0 DMA;DataType=100080000000000100094006000355313600010000000000000000;DisableOnOverflowUnderflow=FALSE"A.AO0 DMA"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;A.AO0 DMA;DataType=100080000000000100094006000355313600010000000000000000;DisableOnOverflowUnderflow=FALSE"A.DI0 DMA"ControlLogic=1;NumberOfElements=1025;Type=0;ReadArbs=Never Arbitrate;ElementsPerRead=1;WriteArbs=Never Arbitrate;ElementsPerWrite=1;Implementation=2;;DataType=1000800000000001000A402104426F6F6C00000100000000000000;DisableOnOverflowUnderflow=FALSE"A.DO1 DMA"ControlLogic=1;NumberOfElements=1025;Type=0;ReadArbs=Never Arbitrate;ElementsPerRead=1;WriteArbs=Never Arbitrate;ElementsPerWrite=1;Implementation=2;;DataType=1000800000000001000A402104426F6F6C00000100000000000000;DisableOnOverflowUnderflow=FALSE"AccelerationXresource=/AccelerationX;0;ReadMethodType=I16AccelerationYresource=/AccelerationY;0;ReadMethodType=I16AccelerationZresource=/AccelerationZ;0;ReadMethodType=I16AudioIn DMA"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;AudioIn DMA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"AudioIn/Leftresource=/Audio/AudioIn\/Left;0;ReadMethodType=I16AudioIn/Rightresource=/Audio/AudioIn\/Right;0;ReadMethodType=I16AudioOut DMA"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;AudioOut DMA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"AudioOut/Leftresource=/Audio/AudioOut\/Left;0;WriteMethodType=I16AudioOut/Rightresource=/Audio/AudioOut\/Right;0;WriteMethodType=I16Button0NumberOfSyncRegistersForReadInProject=Auto;resource=/Button0;0;ReadMethodType=boolConnectorA/AI0resource=/ConnectorA/AI0;0;ReadMethodType=U16ConnectorA/AI1resource=/ConnectorA/AI1;0;ReadMethodType=U16ConnectorA/AI2resource=/ConnectorA/AI2;0;ReadMethodType=U16ConnectorA/AI3resource=/ConnectorA/AI3;0;ReadMethodType=U16ConnectorA/AO0resource=/ConnectorA/AO0;0;WriteMethodType=U16ConnectorA/AO1resource=/ConnectorA/AO1;0;WriteMethodType=U16ConnectorA/DIO0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO0;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO10ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO10;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO11ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO11;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO12ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO12;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO13ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO13;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO14ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO14;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO15:8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO15:8;0;ReadMethodType=u8;WriteMethodType=u8ConnectorA/DIO15ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO15;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO1;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO2;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO3;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO4;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO5;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO6;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO7:0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO7:0;0;ReadMethodType=u8;WriteMethodType=u8ConnectorA/DIO7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO7;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO8;0;ReadMethodType=bool;WriteMethodType=boolConnectorA/DIO9ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorA/DIO9;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/AI0resource=/ConnectorB/AI0;0;ReadMethodType=U16ConnectorB/AI1resource=/ConnectorB/AI1;0;ReadMethodType=U16ConnectorB/AI2resource=/ConnectorB/AI2;0;ReadMethodType=U16ConnectorB/AI3resource=/ConnectorB/AI3;0;ReadMethodType=U16ConnectorB/AO0resource=/ConnectorB/AO0;0;WriteMethodType=U16ConnectorB/AO1resource=/ConnectorB/AO1;0;WriteMethodType=U16ConnectorB/DIO0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO0;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO10ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO10;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO11ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO11;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO12ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO12;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO13ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO13;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO14ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO14;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO15:8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO15:8;0;ReadMethodType=u8;WriteMethodType=u8ConnectorB/DIO15ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO15;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO1;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO2;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO3;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO4;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO5;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO6;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO7:0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO7:0;0;ReadMethodType=u8;WriteMethodType=u8ConnectorB/DIO7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO7;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO8;0;ReadMethodType=bool;WriteMethodType=boolConnectorB/DIO9ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorB/DIO9;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/AI0resource=/ConnectorC/AI0;0;ReadMethodType=I16ConnectorC/AI1resource=/ConnectorC/AI1;0;ReadMethodType=I16ConnectorC/AO0resource=/ConnectorC/AO0;0;WriteMethodType=I16ConnectorC/AO1resource=/ConnectorC/AO1;0;WriteMethodType=I16ConnectorC/DIO0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO0;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO1;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO2;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO3;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO4;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO5;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO6;0;ReadMethodType=bool;WriteMethodType=boolConnectorC/DIO7:0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO7:0;0;ReadMethodType=u8;WriteMethodType=u8ConnectorC/DIO7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/ConnectorC/DIO7;0;ReadMethodType=bool;WriteMethodType=boolLED0ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LED0;0;ReadMethodType=bool;WriteMethodType=boolLED1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LED1;0;ReadMethodType=bool;WriteMethodType=boolLED2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LED2;0;ReadMethodType=bool;WriteMethodType=boolLED3ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LED3;0;ReadMethodType=bool;WriteMethodType=boolmyRIO-1900/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSMYRIO_1900FPGA_TARGET_FAMILYZYNQTARGET_TYPEFPGASystem Resetresource=/System Reset;0;ReadMethodType=bool;WriteMethodType=bool</Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">myRIO-1900/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSMYRIO_1900FPGA_TARGET_FAMILYZYNQTARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/STED2-PC/Documents/GitHub/DyminSTED4all/LabviewCode/Dymin_FPGA_Main.vi</Property>
+				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/STED2-PC/Documents/GitHub/DyminSTED4all/LabviewCode/STED_off_flyback.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="Target Class" Type="Str">myRIO-1900</Property>
 				<Property Name="Top-Level Timing Source" Type="Str">40 MHz Onboard Clock</Property>
@@ -2915,8 +3068,10 @@ AddOutputFilter chunkFilter
 			</Item>
 		</Item>
 		<Item Name="Untitled Library 1.lvlib" Type="Library" URL="../../Documents/LabVIEW Data/Untitled Library 1.lvlib"/>
+		<Item Name="CalibratePower.vi" Type="VI" URL="../CalibratePower.vi"/>
 		<Item Name="Dymin_RT_Main.vi" Type="VI" URL="../Dymin_RT_Main.vi"/>
 		<Item Name="CalculateTimes.vi" Type="VI" URL="../CalculateTimes.vi"/>
+		<Item Name="Calibrate_enum.ctl" Type="VI" URL="../Calibrate_enum.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
@@ -2952,6 +3107,31 @@ AddOutputFilter chunkFilter
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
 				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
+				<Item Name="subCurveFitting.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/CurveFittingBlock.llb/subCurveFitting.vi"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="Get Waveform Time Array.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get Waveform Time Array.vi"/>
+				<Item Name="WDT Get Waveform Time Array DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Time Array DBL.vi"/>
+				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
+				<Item Name="WDT Number of Waveform Samples DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples DBL.vi"/>
+				<Item Name="WDT Number of Waveform Samples CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples CDB.vi"/>
+				<Item Name="WDT Number of Waveform Samples EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples EXT.vi"/>
+				<Item Name="WDT Number of Waveform Samples I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I16.vi"/>
+				<Item Name="WDT Number of Waveform Samples I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I32.vi"/>
+				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
+				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
+				<Item Name="DWDT Get Waveform Time Array.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Get Waveform Time Array.vi"/>
+				<Item Name="DWDT Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital Size.vi"/>
+				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
+				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
+				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
+				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
+				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -2959,6 +3139,10 @@ AddOutputFilter chunkFilter
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="PM100D_32.dll" Type="Document" URL="PM100D_32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
