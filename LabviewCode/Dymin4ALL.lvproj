@@ -26,10 +26,7 @@
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="Documentation Images" Type="Folder"/>
 		</Item>
-		<Item Name="Fit_AOM_calibration.vi" Type="VI" URL="../Fit_AOM_calibration.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="predicted.m" Type="Document" URL="../../MatlabCode/predicted.m"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-031e8e64" Type="RT myRIO">
