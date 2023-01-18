@@ -2920,10 +2920,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Dymin_RT_Main.vi" Type="VI" URL="../Dymin_RT_Main.vi"/>
 		<Item Name="CalculateTimes.vi" Type="VI" URL="../CalculateTimes.vi"/>
 		<Item Name="Calibrate_enum.ctl" Type="VI" URL="../Calibrate_enum.ctl"/>
-		<Item Name="STED_off_flyback.vi" Type="VI" URL="../STED_off_flyback.vi"/>
 		<Item Name="Calibrate_control.ctl" Type="VI" URL="/Z/C/PM100D/Calibrate_control.ctl"/>
 		<Item Name="Calibrate_power.vi" Type="VI" URL="../Calibrate_power.vi"/>
-		<Item Name="TestSaveFile.vi" Type="VI" URL="../TestSaveFile.vi"/>
+		<Item Name="Calculate_aomVolts.vi" Type="VI" URL="../Calculate_aomVolts.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
@@ -2984,8 +2983,6 @@ AddOutputFilter chunkFilter
 				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
-				<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
-				<Item Name="niFpgaDdsAccum.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/siggen/SquareWave/templates/niFpgaDdsAccum.vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
