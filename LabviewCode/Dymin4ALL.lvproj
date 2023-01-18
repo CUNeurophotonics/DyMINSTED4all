@@ -2,7 +2,6 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{46D3F061-0222-4F22-97E6-8C782405F23F}" Type="Ref">/NI-myRIO-1900-031e8e64/Untitled Library 1.lvlib/Test</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -110,153 +109,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="PM100D" Type="Folder">
-			<Item Name="PM100D" Type="Folder">
-				<Item Name="PM100D Calibration Message.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Calibration Message.vi"/>
-				<Item Name="PM100D Cancel Dark Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Cancel Dark Adjustment.vi"/>
-				<Item Name="PM100D Close.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Close.vi"/>
-				<Item Name="PM100D Error Message.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Error Message.vi"/>
-				<Item Name="PM100D Error Query Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Error Query Mode.vi"/>
-				<Item Name="PM100D Error-Query.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Error-Query.vi"/>
-				<Item Name="PM100D Find Resources.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Find Resources.vi"/>
-				<Item Name="PM100D Get Attenuation.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Attenuation.vi"/>
-				<Item Name="PM100D Get Average Count.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Average Count.vi"/>
-				<Item Name="PM100D Get Average Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Average Time.vi"/>
-				<Item Name="PM100D Get Battery Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Battery Voltage.vi"/>
-				<Item Name="PM100D Get Beam Diameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Beam Diameter.vi"/>
-				<Item Name="PM100D Get Communication Timeout.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Communication Timeout.vi"/>
-				<Item Name="PM100D Get Current Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Autorange Mode.vi"/>
-				<Item Name="PM100D Get Current Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Range.vi"/>
-				<Item Name="PM100D Get Current Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Reference State.vi"/>
-				<Item Name="PM100D Get Current Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Current Reference.vi"/>
-				<Item Name="PM100D Get Custom Sensor Input Adapter Type.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Custom Sensor Input Adapter Type.vi"/>
-				<Item Name="PM100D Get Dark Adjustment State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Dark Adjustment State.vi"/>
-				<Item Name="PM100D Get Dark Offset.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Dark Offset.vi"/>
-				<Item Name="PM100D Get Date And Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Date And Time.vi"/>
-				<Item Name="PM100D Get Digital I  O Direction.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Digital I  O Direction.vi"/>
-				<Item Name="PM100D Get Digital I  O Output.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Digital I  O Output.vi"/>
-				<Item Name="PM100D Get Digital I  O Port.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Digital I  O Port.vi"/>
-				<Item Name="PM100D Get Display Brightness.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Display Brightness.vi"/>
-				<Item Name="PM100D Get Display Contrast.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Display Contrast.vi"/>
-				<Item Name="PM100D Get Energy Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Energy Range.vi"/>
-				<Item Name="PM100D Get Energy Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Energy Reference State.vi"/>
-				<Item Name="PM100D Get Energy Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Energy Reference.vi"/>
-				<Item Name="PM100D Get External NTC Parameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get External NTC Parameter.vi"/>
-				<Item Name="PM100D Get Frequency Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Frequency Range.vi"/>
-				<Item Name="PM100D Get Line Frequency.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Line Frequency.vi"/>
-				<Item Name="PM100D Get Peak Detector Threshold.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Peak Detector Threshold.vi"/>
-				<Item Name="PM100D Get Photodiode Input Filter State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Photodiode Input Filter State.vi"/>
-				<Item Name="PM100D Get Photodiode Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Photodiode Responsivity.vi"/>
-				<Item Name="PM100D Get Power Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Autorange Mode.vi"/>
-				<Item Name="PM100D Get Power Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Range.vi"/>
-				<Item Name="PM100D Get Power Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Reference State.vi"/>
-				<Item Name="PM100D Get Power Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Reference.vi"/>
-				<Item Name="PM100D Get Power Unit.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Power Unit.vi"/>
-				<Item Name="PM100D Get Pyrosensor Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Pyrosensor Responsivity.vi"/>
-				<Item Name="PM100D Get Resource Information.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Resource Information.vi"/>
-				<Item Name="PM100D Get Resource Name.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Resource Name.vi"/>
-				<Item Name="PM100D Get Thermopile Accelerator Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Accelerator Mode.vi"/>
-				<Item Name="PM100D Get Thermopile Accelerator State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Accelerator State.vi"/>
-				<Item Name="PM100D Get Thermopile Accelerator Tau.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Accelerator Tau.vi"/>
-				<Item Name="PM100D Get Thermopile Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Thermopile Responsivity.vi"/>
-				<Item Name="PM100D Get Voltage Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Autorange Mode.vi"/>
-				<Item Name="PM100D Get Voltage Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Range.vi"/>
-				<Item Name="PM100D Get Voltage Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Reference State.vi"/>
-				<Item Name="PM100D Get Voltage Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Voltage Reference.vi"/>
-				<Item Name="PM100D Get Wavelength.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Get Wavelength.vi"/>
-				<Item Name="PM100D Identification Query.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Identification Query.vi"/>
-				<Item Name="PM100D Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Initialize.vi"/>
-				<Item Name="PM100D Measure Auxiliary AD0 Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Auxiliary AD0 Voltage.vi"/>
-				<Item Name="PM100D Measure Auxiliary AD1 Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Auxiliary AD1 Voltage.vi"/>
-				<Item Name="PM100D Measure Current.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Current.vi"/>
-				<Item Name="PM100D Measure Energy Density.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Energy Density.vi"/>
-				<Item Name="PM100D Measure Energy.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Energy.vi"/>
-				<Item Name="PM100D Measure Environmental Humidity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Environmental Humidity.vi"/>
-				<Item Name="PM100D Measure Environmental Temperature.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Environmental Temperature.vi"/>
-				<Item Name="PM100D Measure External NTC Resistance.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure External NTC Resistance.vi"/>
-				<Item Name="PM100D Measure External NTC Temperature.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure External NTC Temperature.vi"/>
-				<Item Name="PM100D Measure Frequency.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Frequency.vi"/>
-				<Item Name="PM100D Measure Power Density.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Power Density.vi"/>
-				<Item Name="PM100D Measure Power.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Power.vi"/>
-				<Item Name="PM100D Measure Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Measure Voltage.vi"/>
-				<Item Name="PM100D Preset Registers.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Preset Registers.vi"/>
-				<Item Name="PM100D Raw Read From Instrument.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Raw Read From Instrument.vi"/>
-				<Item Name="PM100D Raw Write To Instrument.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Raw Write To Instrument.vi"/>
-				<Item Name="PM100D Read Register.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Read Register.vi"/>
-				<Item Name="PM100D Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Reset.vi"/>
-				<Item Name="PM100D Revision Query.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Revision Query.vi"/>
-				<Item Name="PM100D Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Self-Test.vi"/>
-				<Item Name="PM100D Sensor Information.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Sensor Information.vi"/>
-				<Item Name="PM100D Set Attenuation.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Attenuation.vi"/>
-				<Item Name="PM100D Set Average Count.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Average Count.vi"/>
-				<Item Name="PM100D Set Average Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Average Time.vi"/>
-				<Item Name="PM100D Set Beam Diameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Beam Diameter.vi"/>
-				<Item Name="PM100D Set Communication Timeout.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Communication Timeout.vi"/>
-				<Item Name="PM100D Set Current Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Autorange Mode.vi"/>
-				<Item Name="PM100D Set Current Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Range.vi"/>
-				<Item Name="PM100D Set Current Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Reference State.vi"/>
-				<Item Name="PM100D Set Current Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Current Reference.vi"/>
-				<Item Name="PM100D Set Custom Sensor Input Adapter Type.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Custom Sensor Input Adapter Type.vi"/>
-				<Item Name="PM100D Set Date And Time.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Date And Time.vi"/>
-				<Item Name="PM100D Set Digital I  O Direction.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Digital I  O Direction.vi"/>
-				<Item Name="PM100D Set Digital I  O Output.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Digital I  O Output.vi"/>
-				<Item Name="PM100D Set Display Brightness.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Display Brightness.vi"/>
-				<Item Name="PM100D Set Display Contrast.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Display Contrast.vi"/>
-				<Item Name="PM100D Set Energy Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Energy Range.vi"/>
-				<Item Name="PM100D Set Energy Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Energy Reference State.vi"/>
-				<Item Name="PM100D Set Energy Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Energy Reference.vi"/>
-				<Item Name="PM100D Set External NTC Parameter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set External NTC Parameter.vi"/>
-				<Item Name="PM100D Set Line Frequency.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Line Frequency.vi"/>
-				<Item Name="PM100D Set Peak Detector Threshold.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Peak Detector Threshold.vi"/>
-				<Item Name="PM100D Set Photodiode Input Filter State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Photodiode Input Filter State.vi"/>
-				<Item Name="PM100D Set Photodiode Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Photodiode Responsivity.vi"/>
-				<Item Name="PM100D Set Power Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Autorange Mode.vi"/>
-				<Item Name="PM100D Set Power Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Range.vi"/>
-				<Item Name="PM100D Set Power Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Reference State.vi"/>
-				<Item Name="PM100D Set Power Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Reference.vi"/>
-				<Item Name="PM100D Set Power Unit.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Power Unit.vi"/>
-				<Item Name="PM100D Set Pyrosensor Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Pyrosensor Responsivity.vi"/>
-				<Item Name="PM100D Set Thermopile Accelerator Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Accelerator Mode.vi"/>
-				<Item Name="PM100D Set Thermopile Accelerator State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Accelerator State.vi"/>
-				<Item Name="PM100D Set Thermopile Accelerator Tau.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Accelerator Tau.vi"/>
-				<Item Name="PM100D Set Thermopile Responsivity.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Thermopile Responsivity.vi"/>
-				<Item Name="PM100D Set Voltage Autorange Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Autorange Mode.vi"/>
-				<Item Name="PM100D Set Voltage Range.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Range.vi"/>
-				<Item Name="PM100D Set Voltage Reference State.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Reference State.vi"/>
-				<Item Name="PM100D Set Voltage Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Voltage Reference.vi"/>
-				<Item Name="PM100D Set Wavelength.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Set Wavelength.vi"/>
-				<Item Name="PM100D Start Dark Offset Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Start Dark Offset Adjustment.vi"/>
-				<Item Name="PM100D VI Tree.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D VI Tree.vi"/>
-				<Item Name="PM100D VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D VXIpnp Error Converter.vi"/>
-				<Item Name="PM100D Write Register.vi" Type="VI" URL="/&lt;instrlib&gt;/PM100D/PM100D.llb/PM100D Write Register.vi"/>
-			</Item>
-			<Item Name="dir - Digital I_O.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Digital I_O.mnu"/>
-			<Item Name="dir - Measure - Configure - Average.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Average.mnu"/>
-			<Item Name="dir - Measure - Configure - Correction.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Correction.mnu"/>
-			<Item Name="dir - Measure - Configure - Current Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Current Measurement.mnu"/>
-			<Item Name="dir - Measure - Configure - Energy Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Energy Measurement.mnu"/>
-			<Item Name="dir - Measure - Configure - External Temperature Sensor.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - External Temperature Sensor.mnu"/>
-			<Item Name="dir - Measure - Configure - Frequency Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Frequency Measurement.mnu"/>
-			<Item Name="dir - Measure - Configure - Input.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Input.mnu"/>
-			<Item Name="dir - Measure - Configure - Peak Detector.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Peak Detector.mnu"/>
-			<Item Name="dir - Measure - Configure - Power Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Power Measurement.mnu"/>
-			<Item Name="dir - Measure - Configure - Voltage Measurement.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure - Voltage Measurement.mnu"/>
-			<Item Name="dir - Measure - Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Configure.mnu"/>
-			<Item Name="dir - Measure - Read.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure - Read.mnu"/>
-			<Item Name="dir - Measure.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Measure.mnu"/>
-			<Item Name="dir - Resource Functions.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Resource Functions.mnu"/>
-			<Item Name="dir - Status Register.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Status Register.mnu"/>
-			<Item Name="dir - System - Battery.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Battery.mnu"/>
-			<Item Name="dir - System - Date Time.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Date Time.mnu"/>
-			<Item Name="dir - System - Display.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Display.mnu"/>
-			<Item Name="dir - System - Line Frequency.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System - Line Frequency.mnu"/>
-			<Item Name="dir - System.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - System.mnu"/>
-			<Item Name="dir - Utility Functions - Raw I_O.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Utility Functions - Raw I_O.mnu"/>
-			<Item Name="dir - Utility Functions - Timeout.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Utility Functions - Timeout.mnu"/>
-			<Item Name="dir - Utility Functions.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir - Utility Functions.mnu"/>
-			<Item Name="dir.mnu" Type="Document" URL="/&lt;instrlib&gt;/PM100D/dir.mnu"/>
-			<Item Name="Report.html" Type="Document" URL="/&lt;instrlib&gt;/PM100D/Report.html"/>
-		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -3064,11 +2916,14 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="Untitled Library 1.lvlib" Type="Library" URL="../../Documents/LabVIEW Data/Untitled Library 1.lvlib"/>
-		<Item Name="CalibratePower.vi" Type="VI" URL="../CalibratePower.vi"/>
+		<Item Name="Fit_powervsVolts.vi" Type="VI" URL="../Fit_powervsVolts.vi"/>
 		<Item Name="Dymin_RT_Main.vi" Type="VI" URL="../Dymin_RT_Main.vi"/>
 		<Item Name="CalculateTimes.vi" Type="VI" URL="../CalculateTimes.vi"/>
 		<Item Name="Calibrate_enum.ctl" Type="VI" URL="../Calibrate_enum.ctl"/>
+		<Item Name="STED_off_flyback.vi" Type="VI" URL="../STED_off_flyback.vi"/>
+		<Item Name="Calibrate_control.ctl" Type="VI" URL="/Z/C/PM100D/Calibrate_control.ctl"/>
+		<Item Name="Calibrate_power.vi" Type="VI" URL="../Calibrate_power.vi"/>
+		<Item Name="TestSaveFile.vi" Type="VI" URL="../TestSaveFile.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
@@ -3129,14 +2984,27 @@ AddOutputFilter chunkFilter
 				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
+				<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+				<Item Name="niFpgaDdsAccum.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/siggen/SquareWave/templates/niFpgaDdsAccum.vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="PM100D_32.dll" Type="Document" URL="PM100D_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
