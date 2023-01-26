@@ -2,7 +2,6 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{46D3F061-0222-4F22-97E6-8C782405F23F}" Type="Ref">/NI-myRIO-1900-031e8e64/Untitled Library 1.lvlib/Test</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -2871,7 +2870,6 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="Untitled Library 1.lvlib" Type="Library" URL="../../Documents/LabVIEW Data/Untitled Library 1.lvlib"/>
 		<Item Name="Dymin_RT_Main.vi" Type="VI" URL="../Dymin_RT_Main.vi"/>
 		<Item Name="CalculateTimes.vi" Type="VI" URL="../CalculateTimes.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
