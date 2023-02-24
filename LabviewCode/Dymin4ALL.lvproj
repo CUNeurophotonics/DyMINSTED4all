@@ -2920,10 +2920,10 @@ AddOutputFilter chunkFilter
 		<Item Name="Dymin_RT_Main.vi" Type="VI" URL="../Dymin_RT_Main.vi"/>
 		<Item Name="CalculateTimes.vi" Type="VI" URL="../CalculateTimes.vi"/>
 		<Item Name="Calibrate_enum.ctl" Type="VI" URL="../Calibrate_enum.ctl"/>
-		<Item Name="Calibrate_control.ctl" Type="VI" URL="/Z/C/PM100D/Calibrate_control.ctl"/>
 		<Item Name="Calibrate_power.vi" Type="VI" URL="../Calibrate_power.vi"/>
 		<Item Name="Calculate_aomVolts.vi" Type="VI" URL="../Calculate_aomVolts.vi"/>
 		<Item Name="AOM_PorV_control_single.ctl" Type="VI" URL="../AOM_PorV_control_single.ctl"/>
+		<Item Name="Calibrate_control.ctl" Type="VI" URL="../Calibrate_control.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/Utilities.lvlib"/>
