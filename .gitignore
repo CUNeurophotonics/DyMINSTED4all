@@ -33,3 +33,10 @@ LabviewCode/Test Join and Split.vi
 MatlabCode/AOM_VtoP_calibrate.m
 MatlabCode/pred_power.m
 MatlabCode/predicted.m
+DyMIN Paper Data/Figure 4/Fig4_DAQ_1_Pvst.mat
+DyMIN Paper Data/Figure 4/Fig4_DAQ_2_Pvst.mat
+DyMIN Paper Data/Figure 4/Fig4_DAQ_3_Pvst.mat
+DyMIN Paper Data/Figure 4/Fig4_DAQ_4_Pvst.mat
+DyMIN Paper Data/Figure 4/Fig4_DAQ_6_Pvst.mat
+DyMIN Paper Data/Figure 4/Fig4_DAQ_Pvst.mat
+DyMIN Paper Data/Figure 4/Fig4_PlotPowervsTimeData.m
