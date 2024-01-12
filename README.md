@@ -5,24 +5,21 @@ Open source instructions and code for making your STED microscope a Dymin STED
 Using inexpensive parts and labview code, we implemented DyMIN STED Microscopy as detailed from in the paper: [Adaptive Illumination STED Nanoscopy](https://www.pnas.org/content/114/37/9797).  The following files include our code, parts list and instructions to set up.
 
 ## Parts list
-National Instruments myRIO-1900
--STED microscope: must use an image acquisition program that can provide a pixel clock to send to the DyMIN FPGA circuit, must also use an APD (up to two APDs can be included) with digital pulses for fluorescence detection
--AOM and RF driver for AOM, AOM must be aligned to control the power to the STED microscope using an analog input to the RF driver.
--National Instruments Inc, myRIO-1900 and power supply
--Digilent Inc, Wire Wrap or Protoboard Expansion for NI myRio
--Analog Devices Inc, ADV3221 soldered to an Evaluation Board (50 Ohm side)
--BNC and SMA cables and connectors
--Metal enclosure for circuit (Protocase, Inc.)
--RF function generators for testing
--Oscilloscope for testing
--Soldering supplies, wires, etc.
-
-## Experimental diagram
+* National Instruments myRIO-1900
+* STED microscope: must use an image acquisition program that can provide a pixel clock to send to the DyMIN FPGA circuit, must also use an APD (up to two APDs can be included) with digital pulses for fluorescence detection
+* AOM and RF driver for AOM, AOM must be aligned to control the power to the STED microscope using an analog input to the RF driver.
+* National Instruments Inc, myRIO-1900 and power supply
+* Digilent Inc, Wire Wrap or Protoboard Expansion for NI myRio
+* Analog Devices Inc, ADV3221 soldered to an Evaluation Board (50 Ohm side)
+* BNC and SMA cables and connectors
+* Metal enclosure for circuit (Protocase, Inc.)
+* RF function generators for testing
+* Oscilloscope for testing
+* Soldering supplies, wires, etc.
 
 ## DyMIN_FPGA_Main.vi
 The file includes the labview code for the FPGA.
 
-Requirements:
 ## Computer Requirements:  
 Labview 2016 (32 bit)  
 Labview Real-Time Module  
@@ -126,4 +123,4 @@ The next step is to test the counting of your APD signal by your STED image acqu
 
 Now you are ready to run the DyMIN on some samples.  After you usual alignment routine, you can use the DyMIN method by just selecting DyMIN ON? to be true and choosing appropriate values for the voltages, time and thresholds for each DyMIN step.
 
-Please contact Stephanie.Meyer@cuanschutz.edu for questions.
+Please contact Emily.Gibson@cuanschutz.edu or stephanie.a.pierce@protonmail.com for questions.
