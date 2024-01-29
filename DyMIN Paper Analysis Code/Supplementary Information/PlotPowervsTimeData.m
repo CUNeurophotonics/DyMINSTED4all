@@ -1,0 +1,10 @@
+plot(F0000CH1.T,F0000CH1.V)
+hold on
+plot(F0005CH1.T,F0005CH1.V)
+plot(F0009CH1.T,F0009CH1.V)
+plot(F0013CH1.T,F0013CH1.V)
+plot(F0017CH1.T,F0017CH1.V)
+plot(F0022CH1.T,F0022CH1.V)
+legend('10mW','20mW','30mW','40mW','50mw','60mW')
+xlabel('Time (s)')
+ylabel('Voltage (V)')
